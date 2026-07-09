@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing</title>
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+    
+  
+</head>
+<body>
+
+    <div class="container" id="app">
+        <!-- Header -->
+        <div class="header">
+            <h1>Products</h1>
+            <div class="badge"><span id="count">0</span> items</div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search products..." />
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="laptops">Laptops</option>
+                <option value="fragrances">Fragrances</option>
+                <option value="skincare">Skincare</option>
+                <option value="groceries">Groceries</option>
+                <option value="home-decoration">Home Decoration</option>
+                <option value="furniture">Furniture</option>
+                <option value="tops">Tops</option>
+                <option value="womens-dresses">Women's Dresses</option>
+                <option value="womens-shoes">Women's Shoes</option>
+                <option value="mens-shirts">Men's Shirts</option>
+                <option value="mens-shoes">Men's Shoes</option>
+                <option value="mens-watches">Men's Watches</option>
+                <option value="womens-watches">Women's Watches</option>
+                <option value="womens-bags">Women's Bags</option>
+                <option value="womens-jewellery">Women's Jewellery</option>
+                <option value="sunglasses">Sunglasses</option>
+                <option value="automotive">Automotive</option>
+                <option value="motorcycle">Motorcycle</option>
+                <option value="lighting">Lighting</option>
+            </select>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="product-grid"></div>
+
+        <!-- Loader -->
+        <div id="loader" class="loader"><div class="spinner"></div> Loading products...</div>
+
+        <!-- No Results -->
+        <div id="noResults" class="no-results" style="display:none;">
+            <strong>No products found</strong><br />
+            Try adjusting your search or filter.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
